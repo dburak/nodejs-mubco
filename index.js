@@ -18,6 +18,4 @@ app.use('/', indexRouter);
 app.use('/api/instructors', instructorRouter);
 app.use('/api/students', studentRouter);
 
-app.listen(8801, () => {
-  console.log('Backend server is running!');
-});
+module.exports = app;
