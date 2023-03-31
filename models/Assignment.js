@@ -3,13 +3,13 @@ const mongoose = require('mongoose');
 const AssignmentSchema = new mongoose.Schema({
   title: {
     type: String,
-    max: 30,
+    maxlength: 30,
     required: true,
   },
   desc: {
     type: String,
     default: '',
-    max: 500,
+    maxlength: 500,
   },
   instructor: {
     type: mongoose.Schema.Types.ObjectId,
